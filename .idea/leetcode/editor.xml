@@ -102,6 +102,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID1115PrintFoobarAlternately.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID1115PrintFoobarAlternately.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1115" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID1115PrintFoobarAlternately.java" />
+              <option name="titleSlug" value="print-foobar-alternately" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID3115MaximumPrimeDifference.java">
           <value>
             <LeetcodeEditor>
