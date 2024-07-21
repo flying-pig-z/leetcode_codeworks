@@ -54,20 +54,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="应用程序.ID11ContainerWithMostWater (1)">
-    <configuration name="ID1114PrintInOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID1114PrintInOrder" />
-      <module name="leetcode_codeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.Test">
     <configuration name="ID1115PrintFoobarAlternately (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID1115PrintFoobarAlternately" />
       <module name="leetcode_codeworks" />
@@ -120,13 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.doc.Test" />
+      <module name="leetcode_codeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.doc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.ID11ContainerWithMostWater (1)" />
         <item itemvalue="应用程序.ID11ContainerWithMostWater" />
         <item itemvalue="应用程序.ID1115PrintFoobarAlternately (1)" />
         <item itemvalue="应用程序.ID1115PrintFoobarAlternately" />
-        <item itemvalue="应用程序.ID1114PrintInOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,15 @@
       <workItem from="1720688832598" duration="59000" />
       <workItem from="1720794193592" duration="941000" />
       <workItem from="1720797468773" duration="3068000" />
-      <workItem from="1720842804066" duration="1570000" />
+      <workItem from="1720842804066" duration="1862000" />
+      <workItem from="1720948038853" duration="842000" />
+      <workItem from="1720948926599" duration="9338000" />
+      <workItem from="1721056805496" duration="1516000" />
+      <workItem from="1721127055859" duration="1751000" />
+      <workItem from="1721129324303" duration="1933000" />
+      <workItem from="1721178737081" duration="126000" />
+      <workItem from="1721491575574" duration="690000" />
+      <workItem from="1721526584415" duration="10033000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1719888953974</created>
@@ -185,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719913055131</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 又没怎么刷题。。。">
+      <created>1720844466442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720844466442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +221,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="feat: 7.2号做题" />
     <MESSAGE value="docs: add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add README.md" />
+    <MESSAGE value="feat: 又没怎么刷题。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 又没怎么刷题。。。" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
