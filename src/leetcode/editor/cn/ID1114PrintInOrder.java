@@ -1,10 +1,7 @@
 package leetcode.editor.cn;
 
-import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import leetcode.editor.util.*;
 
 /*
     题目简单说就是要让first second third顺序输出。这里的思路是输出2的时候检查1有没有输出，输出3的时候检查2有没有输出。
@@ -17,38 +14,36 @@ public class ID1114PrintInOrder {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Foo {
 
-        private AtomicBoolean printFirstOrNot = new AtomicBoolean(false);
-        private AtomicBoolean printSecondOrNot = new AtomicBoolean(false);
+        private int latterPrint = 1;
 
         public Foo() {
         }
 
-        public void first(Runnable printFirst) throws InterruptedException {
-            // first方法输出first，这里题目已经实现好了Runnable接口的run方法，我们直接调用输出first即可
+        public synchronized void first(Runnable printFirst) throws InterruptedException {
+            while (latterPrint != 1) {
+                wait();
+            }
             printFirst.run();
-            // 标记first已经打印
-            printFirstOrNot.set(true);
+            latterPrint = 2;
+            notifyAll();
         }
 
-        public void second(Runnable printSecond) throws InterruptedException {
-            // 如果first还没打印就进行阻塞
-            while (!printFirstOrNot.get()) {
+        public synchronized void second(Runnable printSecond) throws InterruptedException {
+            while (latterPrint != 2) {
+                wait();
             }
-            // 打印second
             printSecond.run();
-            // 标记second已经打印
-            printSecondOrNot.set(true);
-
+            latterPrint = 3;
+            notifyAll();
         }
 
-        public void third(Runnable printThird) throws InterruptedException {
-            // 如果second没有打印就进行阻塞
-            while (!printSecondOrNot.get()) {
+        public synchronized void third(Runnable printThird) throws InterruptedException {
+            while (latterPrint != 3) {
+                wait();
             }
-            // 打印third
             printThird.run();
+            notifyAll();
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
-
+    //leetcode submit region end(Prohibit modification and deletion)
 }

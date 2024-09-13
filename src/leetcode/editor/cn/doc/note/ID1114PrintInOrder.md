@@ -1,26 +1,155 @@
-### 一.涉及的并发知识点
-#### 1.AtomicInteger
-AtomicInteger 是 Java 中提供的一个原子操作类，用于在多线程环境下对整数进行原子操作，即不可分割的操作。
+## 1.原子类
 
-**它可以保证在并发情况下对整数的操作是线程安全的，避免了多个线程同时修改一个整数时可能引发的竞态条件和数据不一致性问题。**
+AtomicInteger 是 Java 中提供的一个原子操作类。
 
-具体来说，AtomicInteger 主要提供了以下几种功能：
+使用原子的方式更新基本类型有如下这些：
 
-原子更新操作：AtomicInteger 提供了诸如 incrementAndGet()、decrementAndGet()、getAndIncrement()、getAndDecrement() 等方法，这些方法能够以原子方式对整数进行自增、自减操作，并返回操作后的值。
+AtomicInteger：整型原子类
+AtomicLong：长整型原子类
+AtomicBoolean：布尔型原子类
 
-CAS（Compare And Set）操作：AtomicInteger 使用了 CAS 操作来保证线程安全。CAS 是一种乐观锁的实现方式，当需要更新变量时，先比较当前值是否符合预期，如果符合则进行更新，否则重新尝试。
+原子类型首先来说它具有可见性，也就是线程之间获得到的数据是共通的；
 
-内存可见性：除了原子性操作外，AtomicInteger 也能保证多个线程对变量的修改对其他线程可见。这是通过底层的内存模型和内存屏障来实现的，确保了每个线程都能看到最新的值。
+另外它还是线程安全的，使用CAS乐观锁实现，可以避免多个线程同时修改一个整数时可能引发的竞态条件和数据不一致性问题。
 
-无锁操作：相比使用传统的 synchronized 关键字来保证线程安全，AtomicInteger 使用了更轻量级的 CAS 操作，因此性能更高，特别是在并发量较大的情况下能够提升程序的吞吐量。
+## 2.Runnable接口
 
-在并发编程中，当多个线程需要对共享的整数进行操作时，使用 AtomicInteger 能够简化编程，并且避免了手动同步所带来的潜在性能问题和复杂性。
-
-#### 2.Runnable接口
 Runnable里面有run方法
 
-#### 3.实现思路
-题目简单说就是要让first second third顺序输出。这里的思路是输出2的时候检查1有没有输出，输出3的时候检查2有没有输出。
+使用示例：
 
+````java
+class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // 定义任务
+        System.out.println("Hello from a thread!");
+    }
+}
 
+public class Main {
+    public static void main(String[] args) {
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread = new Thread(myRunnable);
+        thread.start();  // 启动线程
+    }
+}
+````
 
+## 3.实现思路
+
+题目简单说就是要让first second third顺序输出，就用一个全线程可见的变量控制要打印什么。
+
+具体实现：
+
+```java
+class Foo {
+
+    private AtomicInteger latterPrint = new AtomicInteger(1);
+
+    public Foo() {
+    }
+
+    public void first(Runnable printFirst) throws InterruptedException {
+        while (latterPrint.get() != 1) {
+        }
+        printFirst.run();
+        latterPrint.set(2);
+    }
+
+    public void second(Runnable printSecond) throws InterruptedException {
+        while (latterPrint.get() != 2) {
+        }
+        printSecond.run();
+        latterPrint.set(3);
+    }
+
+    public void third(Runnable printThird) throws InterruptedException {
+        while (latterPrint.get() != 3) {
+        }
+        printThird.run();
+    }
+}
+```
+
+> 其实这里并没有并发问题，使用volatile保证可见性就可以了。但是使用AtomicInteger也没什么问题就是啦。
+
+## 4.wait+notify解决悲观锁使用过程中循环产生的忙等待
+
+原子类使用的是CAS乐观锁，那如果我们使用的是悲观锁synchronized，那么这时候再使用while循环就会忙等待。
+
+忙等待就是while循环会一直占着CPU不变，一直重试，这就是忙等待。
+
+我们就要让那些不用工作的时候别在那里一直等，而是放弃CPU，先睡一会。等需要主线程工作完的时候再唤醒其他线程，看看哪些线程需要工作，它进行工作，然后还需要等待的其他线程再让它们继续睡一会。
+
+我们要使用wait语句让它先不要占着CPU，当打印完first后，唤醒打印second，打印完second后，再唤醒打印third。
+
+我们只要在while循环中加入wait()方法让该等待的线程进行睡眠，并在线程执行完使用notify方法通知线程看看需不需要工作就可以了。
+
+```java
+class Foo {
+
+    private int latterPrint = 1;
+
+    public Foo() {
+    }
+
+    public synchronized void first(Runnable printFirst) throws InterruptedException {
+        while (latterPrint != 1) {
+            wait();
+        }
+        printFirst.run();
+        latterPrint = 2;
+        notifyAll();
+    }
+
+    public synchronized void second(Runnable printSecond) throws InterruptedException {
+        while (latterPrint != 2) {
+            wait();
+        }
+        printSecond.run();
+        latterPrint = 3;
+        notifyAll();
+    }
+
+    public synchronized void third(Runnable printThird) throws InterruptedException {
+        while (latterPrint != 3) {
+            wait();
+        }
+        printThird.run();
+        notifyAll();
+    }
+}
+
+```
+
+需要注意的是使用wait和notifyAll的线程需要经过synchronized修饰。
+
+使用synchronized修饰方法相当于用synchronized将方法中的流程包起来：
+
+````java
+class Foo {
+    // 比如这个方法
+    public synchronized void third(Runnable printThird) throws InterruptedException {
+        while (latterPrint != 3) {
+            wait();
+        }
+        printThird.run();
+        notifyAll();
+    }
+
+    // 其实相当于
+    public void third(Runnable printThird) throws InterruptedException {
+        synchronized (this) {
+            while (latterPrint != 3) {
+                wait();
+            }
+            printThird.run();
+            notifyAll();
+        }
+
+    }
+}
+````
+
+同时使用synchronized之后，因为它默认进入其中的变量都具有可见性，同时它的线程执行也有原子性。

@@ -1,0 +1,71 @@
+    class ZeroEvenOdd {
+        private int n;
+
+        private boolean order = false; // false output 0,true output other
+
+        private int pos = 1;
+
+        public ZeroEvenOdd(int n) {
+            this.n = n;
+        }
+
+        // printNumber.accept(x) outputs "x", where x is an integer.
+        public synchronized void zero(IntConsumer printNumber) throws InterruptedException {
+            while (pos <= n) {
+                while (order) {
+                    if (pos == n+1) {
+                        break;
+                    }
+                    wait();
+                }
+                if (pos == n+1) {
+                    break;
+                }
+                printNumber.accept(0);
+                order = true;
+                notifyAll();
+            }
+
+        }
+
+        public synchronized void even(IntConsumer printNumber) throws InterruptedException {
+            while (pos <= n) {
+                while (!order || pos % 2 != 0) {
+                    if (pos == n+1) {
+                        break;
+                    }
+                    wait();
+                }
+                if (pos == n+1) {
+                    break;
+                }
+                printNumber.accept(pos);
+                order = false;
+                pos++;
+                notifyAll();
+            }
+
+        }
+
+        public synchronized void odd(IntConsumer printNumber) throws InterruptedException {
+            while (pos <= n) {
+                while (!order || pos % 2 == 0) {
+                    if (pos == n+1) {
+                        break;
+                    }
+                    wait();
+                }
+                if (pos == n+1) {
+                    break;
+                }
+                printNumber.accept(pos);
+                order = false;
+                pos++;
+                notifyAll();
+            }
+
+        }
+    }
+
+//runtime:7 ms
+//memory:41.1 MB
