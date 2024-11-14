@@ -21,8 +21,14 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jrt://C:/Users/86138/.jdks/corretto-17.0.8!/java.base/java/util/Arrays.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2iUcPDuVUyll6NpBl3NnqdrRqvd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,48 +61,48 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="应用程序.ID1114PrintInOrder (1)">
-    <configuration name="ID1114PrintInOrder (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID1114PrintInOrder" />
-      <module name="leetcode_codeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ID1114PrintInOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID1114PrintInOrder" />
-      <module name="leetcode_codeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ID11ContainerWithMostWater (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID11ContainerWithMostWater" />
-      <module name="leetcode_codeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.ID977SquaresOfASortedArray">
     <configuration name="ID11ContainerWithMostWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID11ContainerWithMostWater" />
+      <module name="leetcode_codeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ID69Sqrtx (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID69Sqrtx" />
+      <module name="leetcode_codeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ID69Sqrtx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID69Sqrtx" />
+      <module name="leetcode_codeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ID977SquaresOfASortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID977SquaresOfASortedArray" />
       <module name="leetcode_codeworks" />
       <extension name="coverage">
         <pattern>
@@ -123,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ID1114PrintInOrder (1)" />
+        <item itemvalue="应用程序.ID977SquaresOfASortedArray" />
         <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.ID69Sqrtx" />
+        <item itemvalue="应用程序.ID69Sqrtx (1)" />
         <item itemvalue="应用程序.ID11ContainerWithMostWater" />
-        <item itemvalue="应用程序.ID11ContainerWithMostWater (1)" />
-        <item itemvalue="应用程序.ID1114PrintInOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +206,24 @@
       <workItem from="1727101461662" duration="4272000" />
       <workItem from="1727164417515" duration="5000" />
       <workItem from="1727704239661" duration="2049000" />
-      <workItem from="1727707006092" duration="10144000" />
+      <workItem from="1727707006092" duration="11274000" />
+      <workItem from="1727918845395" duration="3130000" />
+      <workItem from="1728398555222" duration="354000" />
+      <workItem from="1728440596231" duration="167000" />
+      <workItem from="1728440780436" duration="3239000" />
+      <workItem from="1728568637550" duration="77000" />
+      <workItem from="1728568734995" duration="3357000" />
+      <workItem from="1728608693733" duration="8000" />
+      <workItem from="1730709288622" duration="1457000" />
+      <workItem from="1730710789033" duration="6211000" />
+      <workItem from="1730877689470" duration="63000" />
+      <workItem from="1730877781035" duration="80000" />
+      <workItem from="1730877889059" duration="4222000" />
+      <workItem from="1731334712471" duration="2494000" />
+      <workItem from="1731375253433" duration="1197000" />
+      <workItem from="1731506279288" duration="3482000" />
+      <workItem from="1731557085640" duration="15000" />
+      <workItem from="1731591388324" duration="2675000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1719888953974</created>
@@ -258,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727707103011</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 又没怎么刷题。。。">
+      <created>1727787197860</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727787197860</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,9 +310,9 @@
     <MESSAGE value="feat: 7.2号做题" />
     <MESSAGE value="docs: add README.md" />
     <MESSAGE value="feat: 这周又没怎么刷题。。。" />
-    <MESSAGE value="feat: 又没怎么刷题。。。" />
     <MESSAGE value="feat: 又没怎么刷题啊啊啊啊啊啊，怎么办啊。。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 又没怎么刷题啊啊啊啊啊啊，怎么办啊。。。" />
+    <MESSAGE value="feat: 又没怎么刷题。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 又没怎么刷题。。。" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

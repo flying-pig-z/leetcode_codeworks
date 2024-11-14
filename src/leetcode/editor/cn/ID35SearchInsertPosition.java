@@ -32,15 +32,16 @@ public class ID35SearchInsertPosition {
                     right = mid - 1;
                 }
             }
-            // right left
-            // right=mid left right小于target ，target应该在right的右边,target=right+1
-            // right left=mid left大于target,target应该在left的坐标，target=left
-            if (mid == left) {
-                return left;
-            } else {
-                // left右移
-                return right+1;
-            }
+//            right left
+//            right=mid left right小于target ，target应该在right的右边,target=right+1
+//            right left=mid left大于target,target应该在left的坐标，target=left
+//            if (mid == left) {
+//                return left;
+//            } else {
+//                // left右移
+//                return right+1;
+//            }
+            return right + 1; // 应该插入的位置
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
