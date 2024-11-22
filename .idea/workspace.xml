@@ -223,7 +223,15 @@
       <workItem from="1731375253433" duration="1197000" />
       <workItem from="1731506279288" duration="3482000" />
       <workItem from="1731557085640" duration="15000" />
-      <workItem from="1731591388324" duration="2675000" />
+      <workItem from="1731591388324" duration="3917000" />
+      <workItem from="1731677150750" duration="2888000" />
+      <workItem from="1731724527937" duration="3847000" />
+      <workItem from="1731739360415" duration="6000" />
+      <workItem from="1731842759943" duration="3171000" />
+      <workItem from="1731911225135" duration="2000" />
+      <workItem from="1731911951511" duration="10000" />
+      <workItem from="1732194217174" duration="1745000" />
+      <workItem from="1732247330590" duration="2062000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1719888953974</created>
@@ -288,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727787197860</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add: 添加代码随想录中数组的题目 &amp;&amp; 部分哈希的题目">
+      <created>1731594769194</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731594769194</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +327,8 @@
     <MESSAGE value="feat: 这周又没怎么刷题。。。" />
     <MESSAGE value="feat: 又没怎么刷题啊啊啊啊啊啊，怎么办啊。。。" />
     <MESSAGE value="feat: 又没怎么刷题。。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 又没怎么刷题。。。" />
+    <MESSAGE value="add: 添加代码随想录中数组的题目 &amp;&amp; 部分哈希的题目" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 添加代码随想录中数组的题目 &amp;&amp; 部分哈希的题目" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

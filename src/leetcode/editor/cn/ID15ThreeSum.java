@@ -20,41 +20,41 @@ public class ID15ThreeSum {
     class Solution {
 
         public List<List<Integer>> threeSum(int[] nums) {
-            Hashtable<Integer, Integer> countHashTable = new Hashtable<>();
+            List<List<Integer>> result = new ArrayList<>();
+            Arrays.sort(nums);
             for (int i = 0; i < nums.length; i++) {
-                if (!countHashTable.containsKey(nums[i])) {
-                    countHashTable.put(nums[i], 1);
-                } else {
-                    countHashTable.put(nums[i], countHashTable.get(nums[i]) + 1);
+                // 跳过重复的a[这一个i与上一个一样]
+                if (i > 0 && nums[i] == nums[i - 1]) {
+                    continue;
                 }
-            }
-            HashSet<List<Integer>> result = new HashSet<>();
-            for (int i = 0; i < nums.length; i++) {
-                for (int j = i + 1; j < nums.length; j++) {
-                    int search = -nums[i] - nums[j];
-                    if (countHashTable.get(search) != null) {
-                        List<Integer> addList = new ArrayList<>();
-                        addList.add(nums[i]);
-                        addList.add(nums[j]);
-                        addList.add(search);
-                        Collections.sort(addList);
-                        if (search != nums[i] && search != nums[j]) {
-                            result.add(addList);
-                        } else if (search != nums[i] || search != nums[j]) {
-                            if (countHashTable.get(search) >= 2) {
-                                result.add(addList);
-                            }
-                        } else {
-                            if (countHashTable.get(search) >= 3) {
-                                result.add(addList);
-                            }
-                        }
+                int left = i + 1, right = nums.length - 1;
+                while (left < right) {
+                    // 移动left指针，并跳过重复的ab[这一个left与上一个一样]
+                    if (left != i+1 && nums[left] == nums[left - 1]) {
+                        left++;
+                        continue;
+                    }
+                    // 移动right指针，并跳过重复的abc
+                    if (right != nums.length - 1 && nums[right] == nums[right + 1]) {
+                        right--;
+                        continue;
+                    }
+                    int sum = nums[i] + nums[left] + nums[right];
+                    if (sum == 0) {
+                        result.add(new ArrayList<>(
+                                List.of(nums[i], nums[left], nums[right])));
+                        left++;
+                    } else if (sum < 0) {
+                        left++;
+                    } else {
+                        right--;
                     }
                 }
             }
-            return new ArrayList<>(result);
+            return result;
         }
     }
+
 
 //leetcode submit region end(Prohibit modification and deletion)
 
