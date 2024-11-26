@@ -212,6 +212,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID160IntersectionOfTwoLinkedLists.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID160IntersectionOfTwoLinkedLists.md" />
+              <option name="frontendQuestionId" value="leetcode.cn160" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID160IntersectionOfTwoLinkedLists.java" />
+              <option name="titleSlug" value="intersection-of-two-linked-lists" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID17LetterCombinationsOfAPhoneNumber.java">
           <value>
             <LeetcodeEditor>
@@ -278,6 +289,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID206ReverseLinkedList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID206ReverseLinkedList.md" />
+              <option name="frontendQuestionId" value="leetcode.cn206" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID206ReverseLinkedList.java" />
+              <option name="titleSlug" value="reverse-linked-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID209MinimumSizeSubarraySum.java">
           <value>
             <LeetcodeEditor>
@@ -319,6 +341,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID242ValidAnagram.java" />
               <option name="titleSlug" value="valid-anagram" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID24SwapNodesInPairs.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID24SwapNodesInPairs.md" />
+              <option name="frontendQuestionId" value="leetcode.cn24" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID24SwapNodesInPairs.java" />
+              <option name="titleSlug" value="swap-nodes-in-pairs" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -605,6 +638,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID704BinarySearch.java" />
               <option name="titleSlug" value="binary-search" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID707DesignLinkedList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID707DesignLinkedList.md" />
+              <option name="frontendQuestionId" value="leetcode.cn707" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID707DesignLinkedList.java" />
+              <option name="titleSlug" value="design-linked-list" />
             </LeetcodeEditor>
           </value>
         </entry>

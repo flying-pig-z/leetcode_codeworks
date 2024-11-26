@@ -1,12 +1,13 @@
 package leetcode.editor.cn;
 
+import java.security.DrbgParameters;
 import java.util.*;
 
 import leetcode.editor.util.*;
 
-public class ID203RemoveLinkedListElements {
+public class ID206ReverseLinkedList {
     public static void main(String[] args) {
-        Solution solution = new ID203RemoveLinkedListElements().new Solution();
+        Solution solution = new ID206ReverseLinkedList().new Solution();
         StringBuilder sb = new StringBuilder();
 
         //执行测试
@@ -26,25 +27,20 @@ public class ID203RemoveLinkedListElements {
      * }
      */
     class Solution {
-        public ListNode removeElements(ListNode head, int val) {
-            // 链表不为空
-            if (head == null) {
+        public ListNode reverseList(ListNode head) {
+            if (head == null)
                 return null;
+            List<ListNode> listNodes = new ArrayList<>();
+            ListNode now = head;
+            while (now != null) {
+                listNodes.add(now);
+                now = now.next;
             }
-            ListNode dummyHead = new ListNode();
-            dummyHead.next = head;
-            head = dummyHead;
-            ListNode pre = head;
-            ListNode post = head.next;
-            while (post != null) {
-                if (post.val == val) {
-                    pre.next = post.next;
-                } else {
-                    pre = pre.next;
-                }
-                post = post.next;
+            for (int i = listNodes.size() - 1; i > 0; i--) {
+                listNodes.get(i).next = listNodes.get(i-1);
             }
-            return dummyHead.next;
+            listNodes.get(0).next = null;
+            return listNodes.get(listNodes.size() - 1);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
