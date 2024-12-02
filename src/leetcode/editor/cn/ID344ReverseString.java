@@ -17,14 +17,14 @@ public class ID344ReverseString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void reverseString(char[] s) {
-            // mid怎么取
-            // 0 1 2 3 -- 2 4/2-1+1 mid = length/2
-            // 0 1 2 3 4 -- 2 mid = length / 2
-            for (int i = s.length - 1; i >= s.length / 2; i--) {
-                int left = s.length - 1 - i;
+            int left = 0;
+            int right = s.length - 1;
+            while (left < right) {
                 char temp = s[left];
-                s[left] = s[i];
-                s[i] = temp;
+                s[left] = s[right];
+                s[right] = temp;
+                left++;
+                right--;
             }
         }
     }

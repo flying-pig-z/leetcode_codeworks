@@ -15,7 +15,7 @@ public class ID844BackspaceStringCompare{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean backspaceCompare(String s, String t) {
-
+		return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

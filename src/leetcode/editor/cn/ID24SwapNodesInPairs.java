@@ -27,13 +27,11 @@ public class ID24SwapNodesInPairs {
      * }
      */
     class Solution {
-        StringBuilder
         public ListNode swapPairs(ListNode head) {
             if (head == null)
                 return null;
             if (head.next == null)
                 return head;
-            ListNode
             ListNode pre = head;
             ListNode post = head.next;
             ListNode prepre = head;

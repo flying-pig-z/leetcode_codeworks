@@ -15,7 +15,7 @@ public class ID503NextGreaterElementIi{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
-        
+        return new int[5];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

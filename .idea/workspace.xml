@@ -28,7 +28,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2iUcPDuVUyll6NpBl3NnqdrRqvd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,22 +61,9 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="应用程序.ID977SquaresOfASortedArray">
-    <configuration name="ID11ContainerWithMostWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID11ContainerWithMostWater" />
-      <module name="leetcode_codeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ID69Sqrtx (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID69Sqrtx" />
+  <component name="RunManager" selected="应用程序.ID459RepeatedSubstringPattern">
+    <configuration name="ID459RepeatedSubstringPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID459RepeatedSubstringPattern" />
       <module name="leetcode_codeworks" />
       <extension name="coverage">
         <pattern>
@@ -114,6 +101,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.doc.KMP" />
+      <module name="leetcode_codeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.doc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.doc.Test" />
       <module name="leetcode_codeworks" />
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ID459RepeatedSubstringPattern" />
+        <item itemvalue="应用程序.KMP" />
         <item itemvalue="应用程序.ID977SquaresOfASortedArray" />
         <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.ID69Sqrtx" />
-        <item itemvalue="应用程序.ID69Sqrtx (1)" />
-        <item itemvalue="应用程序.ID11ContainerWithMostWater" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +235,11 @@
       <workItem from="1732493031888" duration="16000" />
       <workItem from="1732499358031" duration="1775000" />
       <workItem from="1732613390830" duration="2473000" />
-      <workItem from="1732626418203" duration="2028000" />
+      <workItem from="1732626418203" duration="3070000" />
+      <workItem from="1732666340047" duration="4526000" />
+      <workItem from="1732670949260" duration="3000" />
+      <workItem from="1732779299717" duration="3737000" />
+      <workItem from="1733123557659" duration="1254000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1719888953974</created>
@@ -314,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732256525786</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add: 完成代码随想录的链表部分">
+      <created>1732628911026</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732628911027</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +351,8 @@
     <MESSAGE value="feat: 又没怎么刷题。。。" />
     <MESSAGE value="add: 添加代码随想录中数组的题目 &amp;&amp; 部分哈希的题目" />
     <MESSAGE value="add: 完成代码随想录的哈希部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: 完成代码随想录的哈希部分" />
+    <MESSAGE value="add: 完成代码随想录的链表部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 完成代码随想录的链表部分" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
